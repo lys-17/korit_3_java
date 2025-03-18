@@ -36,4 +36,26 @@ public class Constructor {
         this.num = number;  //this : 해당 클래스에서 객체를 만들게 되면 객체 이름으로 대체됨
     }
 
+    //String title을 매개변수로 하는 생성자를 정의하고, RequiredArgsConstructor 라는 안내문을 출력할 수 있도록 작성한 뒤
+    //ConstructorMain 으로 가셔서 constructor4라는 객체명을 지니고, title에 "여러분이름"으로 지어 객체를 생성한 뒤
+    //sout를 입력하여 콘솔에 이름뜨게 하기
+    Constructor (String title) {
+        this.name = name;
+    }
+
+
+    // 두 개 이상의 매개변수를 지니는 생성자
+    Constructor(int num, String name) {
+        this.num = num;
+        this.name = name;
+        System.out.println("AllArgusConstructor");
+    }
+
+    public void showInfo() {
+
+    }
+
+    //method 정의
+
+
 }

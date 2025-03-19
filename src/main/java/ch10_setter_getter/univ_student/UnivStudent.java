@@ -11,10 +11,10 @@ package ch10_setter_getter.univ_student;
         5) 이름, 학년, 점수를 받는 생성자
 
     3. Setter / Getter 메서드 정의 -> alt + ins 사용할 수 있습니다.
-        각각 필드에 대한 setter / getter 를 생성합니다.
-        setter 가 세 개 / getter 세 개
-        1) setGrade 의 범위 1 ~ 4학년
-        2) setScore 의 범위 0.0 ~ 4.5까지
+        각각 필드에 대한 setter / getter를 생성합니다.
+        setter가 세 개 / getter 세 개
+        1) setGrade의 범위 1 ~ 4학년
+        2) setScore의 범위 0.0 ~ 4.5까지
         범위를 벗어나면 불가능한 입력입니다 가 출력되도록 작성하시오.
 
     4. UnivStudentMain 생성하시고
@@ -36,31 +36,19 @@ package ch10_setter_getter.univ_student;
     student5.showInfo();
  */
 public class UnivStudent {
+    private String name;
+    private int grade;
+    private double score;
 
-    String name;
-    int grade;
-    double score;
+    public UnivStudent() {
+    }
 
     public UnivStudent(String name) {
         this.name = name;
     }
 
     public UnivStudent(int grade) {
-        if(grade > 0 || grade < 5) {
-            System.out.println("불가능한 학년입력입니다");
-            return;
-        }
-        System.out.println("학년이 입력되었습니다.");
         this.grade = grade;
-    }
-
-    public UnivStudent(double score) {
-        if(score > 0.0 || score < 4.5) {
-            System.out.println("불가능한 점수 입력입니다");
-            return;
-        }
-        System.out.println("점수가 입력되었습니다.");
-        this.score = score;
     }
 
     public UnivStudent(String name, int grade) {
@@ -74,9 +62,42 @@ public class UnivStudent {
         this.score = score;
     }
 
-    public void showInfo() {
-        System.out.println("이름 : " + name + "학년 :" + grade + "점수 :" + score);
+    public String getName() {
+        return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        if( grade < 1 || grade > 4 ) {
+            System.out.println(name +  " : 불가능한 입력입니다.");
+            return;
+        }
+        this.grade = grade;
+    }
+
+    public double getScore() {
+        return score;
+    }
+
+    public void setScore(double score) {
+        if(score < 0 || score > 4.5) {
+            System.out.println(name + " : 불가능한 입력입니다.");
+            return;
+        }
+        this.score = score;
+    }
+
+    public void showInfo() {
+        System.out.println("이름 : " + name);
+        System.out.println("학년 : " + grade);
+        System.out.println("점수 : " + score);
+        System.out.println();
+    }
 }

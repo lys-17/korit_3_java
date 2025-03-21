@@ -1,4 +1,4 @@
-package ch00_rewiew;
+package ch00_review;
 
 public class Review02 {
     public static void main(String[] args) {

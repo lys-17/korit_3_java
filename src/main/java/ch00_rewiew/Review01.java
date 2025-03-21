@@ -1,4 +1,4 @@
-package ch00_rewiew;
+package ch00_review;
 
 import java.util.Scanner;
 

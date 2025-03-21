@@ -46,7 +46,20 @@ public class Main {
         boolean checkFlag3;         // 변수를 선언하는 부분 - 자료형 변수명;
         checkFlag3 = true;          // 변수에 처음 값을 대입하는 것을 초기화
         checkFlag3 = false;             // 변수에 값을 재대입
--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //        //2. 문자 자료형 변수 char
 //        char name1 = "안";
 //        char name2 = "근";

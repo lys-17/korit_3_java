@@ -3,13 +3,13 @@ package ch06_condition;
 import java.util.Scanner;
 
 /*
-조건문
-1. if문 : if 다음에 있는 () 내의 조건식이 true일 떄 {} 내의 실행문이 실행됨 false는 실행x
+    조건문
+    1. if문 : if 다음에 있는 () 내의 조건식이 true일 떄 {} 내의 실행문이 실행됨. false는 실행x
 
-형식 :
-if(조건식) {   조건식 : true/ false로 결론이 날 수 있는 식 또는 문장
-    실행문
-    }
+    형식 :
+    if(조건식) {   조건식 : true/ false로 결론이 날 수 있는 식 또는 문장
+        실행문
+        }
  */
 public class Condition01 {
     public static void main(String[] args) {

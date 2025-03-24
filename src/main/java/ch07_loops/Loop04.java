@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 
  */
-public class Loops04 {
+public class Loop04 {
     public static void main(String[] args) {
 //        //1부터 100까지의 합을 구하는 for문
 //        int sum = 0;

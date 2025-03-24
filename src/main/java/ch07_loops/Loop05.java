@@ -1,6 +1,6 @@
 package ch07_loops;
 
-public class Loops05 {
+public class Loop05 {
     public static void main(String[] args) {
 //        //1일차 1교시 입니다 ~5일차 5교시입니다
 //        for(int i = 1; i < 6; i++) {

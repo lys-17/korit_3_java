@@ -3,25 +3,25 @@ package ch06_condition;
 import java.util.Scanner;
 
 /*
-switch문
+    switch문
 
-형식 :
+    형식 :
 
-switch(변수형)
-case 조건1 :
-실행문 1
-break;
-case 조건2:
-실행문2
-break;
-case 조건3 :
-실행문 3
-break;
-case 조건4:
-실행문4
-break;
-default:
-실행문5
+    switch(변수형)
+        case 조건1 :
+            실행문 1
+             break;
+        case 조건2:
+            실행문2
+             break;
+        case 조건3 :
+            실행문 3
+             break;
+        case 조건4:
+            실행문4
+            break;
+        default:
+           실행문5
 
  */
 public class Condition07 {
@@ -47,49 +47,52 @@ public class Condition07 {
 //        selected = scanner.nextLine();
         int selected2 = scanner.nextInt();
 
+        switch (selected2) {
+            case 1:
+                System.out.println("메뉴1을 선택하셨습니다.");
+                break;
+            case 2:
+                System.out.println("메뉴2을 선택하셨습니다.");
+                break;
+            case 3:
+                System.out.println("메뉴3을 선택하셨습니다.");
+                break;
+            case 4:
+                System.out.println("메뉴4을 선택하셨습니다.");
+                break;
+            case 5:
+                System.out.println("메뉴5을 선택하셨습니다.");
+                break;
+            default:
+                System.out.println("잘못 입력하셨습니다.");
+        }
 
-//        switch(selected) {
-//            case"a":
-//                System.out.println("메뉴1을 선택하셨습니다");
+
+
+//        if (selected.equals("a")) {
+//            System.out.println("메뉴1을 선택하셨습니다.");
+//        } else if (selected.equals("b")) {
+//            System.out.println("메뉴2을 선택하셨습니다.");
+//        }     -> 이렇게 쓰는건 가독성을 너무 해친다.
+
+//        switch (selected) {
+//            case "a":
+//                System.out.println("메뉴1을 선택하셨습니다.");
 //                break;
-//            case"b":
-//                System.out.println("메뉴2를 선택하셨습니다");
+//            case "b":
+//                System.out.println("메뉴2를 선택하셨습니다.");
 //                break;
-//            case"c":
-//                System.out.println("메뉴3을 선택하셨습니다");
+//            case "c":
+//                System.out.println("메뉴3를 선택하셨습니다.");
 //                break;
-//            case"d":
-//                System.out.println("메뉴4를 선택하셨습니다");
+//            case "d":
+//                System.out.println("메뉴4를 선택하셨습니다.");
 //                break;
-//            case"e":
-//                System.out.println("메뉴5를 선택하셨습니다");
+//            case "e":
+//                System.out.println("메뉴5를 선택하셨습니다.");
 //                break;
 //            default:
-//                System.out.println("메뉴선택을 완료하셨습니다");
-//
-//
+//                System.out.println("잘못 선택하셨습니다.");
 //        }
-
-//        switch(selected2) {
-//            case "1":
-//                System.out.println("메뉴1을 선택하셨습니다");
-//                break;
-//            case "2":
-//                System.out.println("메뉴2를 선택하셨습니다");
-//                break;
-//            case "3":
-//                System.out.println("메뉴3을 선택하셨습니다");
-//                break;
-//            case "4":
-//                System.out.println("메뉴4를 선택하셨습니다");
-//                break;
-//            case "5":
-//                System.out.println("메뉴5를 선택하셨습니다");
-//                break;
-//            default:
-//                System.out.println();
-
-
     }
 }
-

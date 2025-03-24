@@ -48,48 +48,43 @@ public class Main {
         checkFlag3 = false;             // 변수에 값을 재대입
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 //        //2. 문자 자료형 변수 char
-//        char name1 = "안";
-//        char name2 = "근";
-//        char name3 = "수";
+//        char name1 = "안";     // 문자를 입력할 때는 작은 따옴표(')로 감싼다.
+//        char name2 = "근";     // char : character의 축약어 알파벳/한글/숫자 하나를 의미
+//        char name3 = "수";     //문자 =/= 문자열
 
-//        System.out.println(name1 + name2 + name3);      //
+//        System.out.println(name1 + name2 + name3);      //144732
+
 //        System.out.println("" + name1 + name2 + name3);         //안근수
 
-        /* 이상의 코드에서 확인할 수 있는 것은 컴퓨터는 생각보다 멍청햇거 개발자인 저희가 하나하나 지정을 다 해줘야 한다는 점ㄴ입니다.
-        문자와 무자열이 서로 다른 개념인데, 문자를 세번 더했을 때
+//        System.out.println("" + name2 + name1 + name3);
 
-        그렇기 때문에 저희는 sout () 의 ()ㅇ안에 ""를 넣어줌으로써 () 안의 부분이 전체 분자'말'로 인식되게끔 꼼수를
+        /* 이상의 코드에서 확인할 수 있는 것은 컴퓨터는 생각보다 멍청해서
+        개발자인 저희가 하나하나 지정을 다 해줘야 한다는 점입니다.
+        문자와 무자열이 서로 다른 개념인데, 문자를 세번 더했을 경우
+        더이상 문자가 아니라 문자열로 인식되기 때문에 원하는 방식대로 출력이 되지 않습니다.
 
+        그렇기 때문에 저희는 sout () 의 ()ㅇ안에 ""를 넣어줌으로써,
+        () 안의 부분이 전체 분자'말'로 인식되게끔 꼼수를 부린 부분이 58번 라인에 해당합니다.
 
-
+        여기서 알 수 있는 점은 sout()의 가장 먼저 나온 데이터의 자료형을 따라간다는 점입니다.
+        증거
          */
-        System.out.println("123" + 1);     // 문자열 + 숫자여쓴ㄴ데 1231이 입력
+        System.out.println("123" + 1);     // 문자열 + 숫자였는데 1231이 입력
 
+        // 3. 정수 자료형 변수 (int)
         int width1 = 100;
         int width2 = 200;
 
-        System.out.println(width1 + width2);
+        System.out.println(width1 + width2);    // 숫자끼리는 연산이 가능합니다.
 
         String width3 = "300";
         String width4 = "400";
 
-        System.out.println(width3 + width4);
+        System.out.println(width3 + width4);    // 300400 출력
 
-        System.out.println(width1 + width3);
-        System.out.println(width4 + width2);
+        System.out.println(width1 + width3);    // 정수 + 문자열 = 100300 출력됨
+        System.out.println(width4 + width2);    // 문자열 + 정수 = 400200 출력됨
 
         //4. 실수 자료형 double
 
@@ -100,10 +95,14 @@ public class Main {
         System.out.println(19 * pi);
 
         // 지름이 42인 원의 넓이를 구하시오
+
         System.out.println(21 * 21 * pi);
 
         // 반지름아 17인 원의 둘레를 구하시오
+
         System.out.println(17*2*pi);
+
+//        System.out.println(17*2*pi);
 
         /*
         java에서의 변수 표기 방식
@@ -114,7 +113,8 @@ public class Main {
             ex) 복수 단어 짜리 - myTestResult
 
             2. 특수문자 지양
-
+                cf) 파이썬 학습하신 분들은 파이썬의 변수 표기 방식은
+                Snake Case라고 해서 my_test_result 와 같은 방식으로 표기합니다.
          */
 
 //        //5. 문자열 자료형
@@ -125,10 +125,16 @@ public class Main {
 //        String job = "학원 강사";
 //
 //        System.out.println("안녕하세요 제 이름은 " + name + "이고" + major + "출신입니다");
+//        System.out.println("제 직업은 현재 " + job + "입니다.");
+//        String example1 = "100";
+//        String example2 = "200";
+//        System.out.println(example1 + "이고, " + example2);
+//        System.out.println(example1 + example2);
+
 
         String name1;
         int age1;
-        String major;
+        String major1;
         String mbti1;
 
         // 이상의 선언된 변수를 기준으로 적절한 여러분의 데이터로 초기화하고, 콘솔창에 다음과 같이 입려고딜 수 있도록 작성하시오
@@ -136,10 +142,12 @@ public class Main {
         //저는 학원 3월 국비 과정을 수강하고 있는 000입니다 00샃이비니다
         //제 전공은 000이고 mbti는 000입닞다
 
-        String name = "이예성";
-        String mbti = "infj";
+        name1 = "이예성";
+        age1 = 20;
+        major1 = "문예창작하과";
+        mbti1 = "INFJ";
 
-        System.out.println("저는 학원 3월 국비 과정을 수강하고 있는 " + name + "입니다");
-        System.out.println();
+        System.out.println("저는 학원 3월 국비 과정을 수강하고 있는 " + name1 + "입니다");
+        System.out.println("제\t 전공은 " + major1 + "이며, mbti는 " + mbti1 + "입니다. 열심히 할게요!!!");
     }
 }

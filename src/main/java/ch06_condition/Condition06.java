@@ -7,20 +7,23 @@ import java.util.Scanner;
      if 문 내에 if문이 연속적으로 작성될 수 있음
 
      형식 :
-     if(조건식1- a) {
-     실행문1 - a
-     } else if (조건식1- b) {
-     실행문1 - b
-     } else {
-     실행문1 - c
-     }
+         if(조건식1- a) {
+            실행문1 - a
+         } else if (조건식1- b) {
+             실행문1 - b
+         } else {
+            실행문1 - c
+         }
      } else if(조건식2) {
-     실행문2
-     if(조건식2 -a) {
-     실행문2 - a
+         실행문2
+         if(조건식2 -a) {
+            실행문2 - a
+         } else {
+             실행문2 - b
+          }
      } else {
-      실행문2 - b
-      }
+         실행문3
+     }
  */
 public class Condition06 {
     public static void main(String[] args) {
@@ -43,12 +46,16 @@ public class Condition06 {
         입력한 점수는 92점 이며 a학점입니다
          */
 
+        // 1. Scanner import
         Scanner scanner = new Scanner(System.in);
 
+        // 2. int score 선언(및 초기화)
         int score = 0;
 
+        // 3. String grade 선언(및 초기화)
         String grade = "";
 
+        // 4. Scanner를 입력 받기 위한 안내문 작성
         System.out.println("점수를 입력하시오 >>>");
         score = scanner.nextInt();
 
@@ -57,8 +64,7 @@ public class Condition06 {
 //        } else {        // 조건은 grade >= 0이 됨
 //            if (score > 100) {
 //                grade = "x";
-//                //이 부분의 조건은 grade>=0 && grade <=100이 됨
-//            } else {
+//            } else {                    //이 부분의 조건은 grade>=0 && grade <=100이 됨
 //                if (score > 90) {
 //                    grade = "A";
 //                } else if (score > 80) {
@@ -72,18 +78,12 @@ public class Condition06 {
 //                }
 //            }
 //        }
-//        System.out.println("점수는 " + score + "점이며 " + grade + "학점입니다");
-
 
         //논리 연산자를 사용한 if문
-        //100초과 및 0 미만을 거르는 조건문 작성
 
-        if(score > 100 || score < 0) {
+        if(score > 100 || score < 0) {        //100초과 및 0 미만을 거르는 조건문 작성
             grade = "x";
         } else {
-            if (score > 100) {
-                grade = "x";
-            } else {
                 if (score > 90) {
                     grade = "A";
                 } else if (score > 80) {
@@ -95,11 +95,8 @@ public class Condition06 {
                 } else {
                     grade = "F";
                 }
-            }
         }
         System.out.println("점수는 " + score + "점이며 " + grade + "학점입니다");
-
-
 
     }
 }

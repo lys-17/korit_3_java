@@ -1,6 +1,5 @@
 package ch04_scanner;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class scanner03 {
@@ -23,7 +22,5 @@ public class scanner03 {
 
         System.out.println("a + b = " + a + b);
         System.out.println("a + b = " + (a + b));
-
-
     }
 }

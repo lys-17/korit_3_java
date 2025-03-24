@@ -1,6 +1,5 @@
 package ch04_scanner;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class scanner {
@@ -26,9 +25,17 @@ public class scanner {
 
         int 자료형으로 변수를 선언하고 초기화 할 때
         int 변수명 = scanner.nextLine();
+
+        double 자료형으로 변수를 선언하고 초기화 할 때
+        double 변수명 = scanner.nextDouble();
+
+        scanner를 사용할 때 여러분들은 결국 콘솔에 입력한
+        데이터를 변수에 저장하게 되는데,
+        그 자료형을 고려하여 작성할 필요성이 있습니다.
          */
         System.out.println("키를 입력하세요 >>");
         double height = scanner.nextDouble();
+        System.out.println(height);
 
 
         //실행 예
@@ -43,6 +50,3 @@ public class scanner {
         System.out.println("내년에는 " + (age+ 1) + "살이 됩니다");
    }
 }
-
-
-

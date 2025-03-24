@@ -5,7 +5,7 @@ while문을 사용하여
 ~~~
 이 출력되도록 하시오
  */
-public class Loops03 {
+public class Loop03 {
     public static void main(String[] args) {
 
 //        int num = 1;

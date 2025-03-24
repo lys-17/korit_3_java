@@ -17,16 +17,16 @@ import java.util.Scanner;
 public class Condition03 {
     public static void main(String[] args) {
         //1. scanner 클래스 import
-
         Scanner scanner = new Scanner(System.in);
 
+        // 2. 변수 및 상수의 선언 및 초기화
         int point = 0;
         final int VIP_POINT = 80;
         final int GOLD_POINT = 60;
         final int SILVER_POINT = 40;
         final int BRONZE_POINT = 20;
         //2의 추가 부분을 통해 코드
-        String mating = "";
+        String rating = "";
 //
 //
         System.out.println("회원 포인트를 입력하세요 >>>");
@@ -59,17 +59,17 @@ public class Condition03 {
 //
 //
         if(point > VIP_POINT) {
-            mating = "VIP";
+            rating = "VIP";
         } else if(point > GOLD_POINT) {
-            mating = "GOLD";
-        } else if(point > SILVER_POINT) {
-            mating = "SILVER";
+            rating = "GOLD";
+        } else if (point > SILVER_POINT) {
+            rating = "SILVER";
         } else if(point > BRONZE_POINT) {
-            mating = "BRONZE";
+            rating = "BRONZE";
         } else if(point <= 20) {
-            mating = "일반";
+            rating = "일반";
         }
-
+        System.out.println("당신의 등급 : " + rating);
 
     }
 }

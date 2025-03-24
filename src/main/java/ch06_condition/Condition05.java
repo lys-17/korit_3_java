@@ -22,17 +22,29 @@ import java.util.Scanner;
 public class Condition05 {
     public static void main(String[] args) {
 
-
         //1. Scanner class import
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("년도를 입력하세요 >>>");
         int year = scanner.nextInt();
-        String  leapyear = "";
 
         //1. 조건이 널널한 것으로부터 촘촘한 것으로 배치해야 함 -> 순서대로 실행되기 때문
         //2. 지시 사항에 해당되지 않는 년도는 전부 윤년이 아님 -> else로 처리할 수 있음
         //3. condition03에서 작성한 것처럼 실행문을 전부 sout으로 쓸 필요 없어 축약 가능
+
+
+//        if(year % 400 == 0) {
+//            System.out.println("윤년입니다.");
+//        } else if (year % 100 == 0) {
+//            System.out.println("윤년이 아닙니다.");
+//        } else if (year % 4 == 0) {
+//            System.out.println("윤년입니다.");
+//        } else {
+//            System.out.println("윤년이 아닙니다.");
+//        }
+
+
+        String  leapyear = "";
 
         if(year % 400 == 0) {
             leapyear = "윤년입니다";
@@ -44,7 +56,6 @@ public class Condition05 {
             leapyear = "윤년이 아닙니다";
         }
         System.out.println(year + "년은" + leapyear);
-
 
     }
 }

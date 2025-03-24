@@ -9,7 +9,7 @@ package ch07_loops;
      반복실행문1-b
      }
  */
-public class Loops02 {
+public class Loop02 {
     public static void main(String[] args) {
 //        int day = 1;
 //        int lesson = 1;

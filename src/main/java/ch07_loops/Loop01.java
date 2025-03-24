@@ -14,7 +14,7 @@ package ch07_loops;
 
     false가 되는 시점을 지정해주지 않는다면 무한히 반복실행문이 실행된다는 점에서 무한루프라는 표현을 씀
  */
-public class Loops01 {
+public class Loop01 {
     public static void main(String[] args) {
 //        int i = 0;
 

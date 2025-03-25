@@ -7,9 +7,9 @@ import java.util.Scanner;
     : 대부분의 경우에는 명확한 횟수가 고정되어 있을 때 사용하는 바법
 
     형식 :
-   for (시작값; 종료값; 증감값;) {
-   반복실행문
-   }
+    for (시작값; 종료값; 증감값;) {
+        반복실행문
+    }
 
 
  */
@@ -20,6 +20,7 @@ public class Loop04 {
 //        for(int i = 0; i < 100; i++) {
 //            sum += i;
 //        }
+
 //        System.out.println(sum);
 
         /*
@@ -28,7 +29,6 @@ public class Loop04 {
             실행 예
             1부터 몇까지 더하시겠습니까? >>>>> 10
             합은 55입니다
-
          */
 
         Scanner scanner = new Scanner(System.in);
@@ -36,15 +36,12 @@ public class Loop04 {
         int n = scanner.nextInt();
         int sum2 = 0;
 
+        // 여기에 for문 작성하시오.
         for(int i = 1; i <= n; i++) {
             sum2 += i;
         }
 
         System.out.println("합은 " + sum2 + "입니다");
-
-
-
-
 
     }
 }

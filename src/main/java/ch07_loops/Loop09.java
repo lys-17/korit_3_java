@@ -12,6 +12,7 @@ package ch07_loops;
  */
 public class Loop09 {
     public static void main(String[] args) {
+        // #1
         // 개행 관련 for문
         for(int i = 0; i < 5; i++) {
             // 공백관련 for문
@@ -26,35 +27,35 @@ public class Loop09 {
             System.out.println();
         }
 
-//        // 개행 관련 for문
-//        for(int i = 0; i < 6; i++) {
-//            // 공백관련 for문
-//            for (int j = 5; j > i+1 ; i--) {
-//                System.out.print(" ");
-//            }
-//            //별 찍기 관련 for문
-//            for(int k = 0; k < i; k++) {
-//                System.out.print("*");
-//            }
-//            //개행 실행문
-//            System.out.println();
-//        }
-//
-//
-//        //#2
-//        // 개행 관련 for문
-//          for(int i = 0; i < 6; i++) {
-//            // 공백관련 for문
-//            for (int j = 0; j < 6-i ; i++) {
-//                System.out.print(" ");
-//            }
-//            //별 찍기 관련 for문
-//            for(int k = 0; k < i; k++) {
-//                System.out.print("*");
-//            }
-//            //개행 실행문
-//            System.out.println();
-//          }
+        // 개행 관련 for문
+        for(int i = 0; i < 6; i++) {
+            // 공백관련 for문
+            for (int j = 5; j > i+1 ; i--) {
+                System.out.print(" ");
+            }
+            //별 찍기 관련 for문
+            for(int k = 0; k < i; k++) {
+                System.out.print("*");
+            }
+            //개행 실행문
+            System.out.println();
+        }
+
+
+        //#2
+        // 개행 관련 for문
+          for(int i = 0; i < 6; i++) {
+            // 공백관련 for문 -> 여기를 j++ 형태로 작성하는 예시입니다.
+            for (int j = 0; j < 6-i ; i++) {
+                System.out.print(" ");
+            }
+            //별 찍기 관련 for문
+            for(int k = 0; k < i; k++) {
+                System.out.print("*");
+            }
+            //개행 실행문
+            System.out.println();
+          }
 
     }
 }

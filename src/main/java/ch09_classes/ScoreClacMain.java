@@ -9,7 +9,7 @@ public class ScoreClacMain {
         //필요한 클래스들을 import
 
         Scanner scanner = new Scanner(System.in);
-        ScoreClac scoreClac = new ScoreClac();
+        ScoreCalc scoreClac = new ScoreCalc();
 
         //ch08의 ScoreClac2와 동일한 기능을 하도록 나머지 코드를 전부 작성하시오
 

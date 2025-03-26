@@ -19,7 +19,7 @@ public class StudentMain {
         student3.studentCode = 2025003;
         student3.score = 95.8;
 
-        student4.score = 4.0;
+        student4.score = 4; //double이라 어차피 4.0으로 뜹니다
 
 
 //        Student student2 = new Student(student1.studentCode);

@@ -83,7 +83,7 @@ public class Student {
 
     void showInfo() {
         System.out.println(name + "학생의 정보입니다. \n학번" + studentCode);
-        System.out.println( "이름 :" + name + "\n점수 :" + score + "\n");
+        System.out.println( "이름 :" + name + "\n점수 :" + score);
     }
 
 }

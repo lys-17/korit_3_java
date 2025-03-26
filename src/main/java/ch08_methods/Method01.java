@@ -27,13 +27,14 @@ public class Method01 {
 
         String result = "";
 
-        for(int i = 0; i < 3; i++) {
-            for(int j = 0; j < i+1; j++) {
-                result += "*";
+        for (int i = 0 ; i < 3 ; i++) {
+            for (int j = 0 ; j < i+1 ; j++ ) {
+//                result += "✨";
+                System.out.print("✨");
             }
-            result += "/n";
+//            result += "\n";
+            System.out.println();
         }
-
         return "";   // call1, 2와 달리 return 명령어가 있음
     }
 

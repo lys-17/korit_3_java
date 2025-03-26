@@ -16,7 +16,7 @@ package ch09_classes;
         1. 기본 생성자 : 매개변수가 없는 생성자
             (사실 클래스를 만들 때 default로 생성되어 정의하지 않을 때도 있음)
             ClassA, Car에서 기본 생성자를 정의하지 않고
-            ClassAMain, CarMain에서 객체를 생성해봤습니다 -> 복습해야합니다
+            ClassAMain, CarMain에서 객체를 생성해봤습니다 -> 복습해야함
         2. 매개변수 생성자 : 하나 이상의 매개변수를 가지는 생성자
  */
 public class Constructor {

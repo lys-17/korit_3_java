@@ -15,7 +15,6 @@ public class Array02 {
 //            if(arr01[i] % 3 == 0) {
 //                System.out.print(arr01[i] + " ");
 //            }
-//
 //        }
 
         /*
@@ -41,20 +40,36 @@ public class Array02 {
 
             5의 배수에 해당하는 학생만 콘솔에 출력하시오.
          */
+        // Scanner 임포트
         Scanner scanner = new Scanner(System.in);
-        String[] names = new String[15];
 
-//
-//        indexNum = scanner.nextInt();
-//        scanner.nextLine();
-//        String[] names = new String[indexNum];
-//        for(int i = 0; i < names.length; i++) {
-//            System.out.println((i+1) + "번째 학생 이름입니다");
-//         names[i] = scanner.nextLine();
-//         for(int i )
-//        }
+        // 사용할 변수 선언 및 초기화
+        int indexNum = 0;
+
+        // 인덱스 넘버를 받을 프롬프트 작성
+        System.out.print("몇 명의 학생을 등록하시겠습니까? >>> ");
+
+        // 인덱스 넘버를 받을 변수를 선언하고 대입
+        indexNum = scanner.nextInt();
+        scanner.nextLine();
+
+        // 비어있는 배열 선언
+        String[] names = new String[indexNum];
+        // 반복문 작성을 통해 각 인덱스에 값을 대입
+        for(int i = 0 ; i < names.length ; i++) {
+            System.out.print((i + 1) + " 번 째 학생 이름 : ");
+            names[i] = scanner.nextLine();
+
+        }
 
 
+        // 출력하는 반복문
+        for(int i = 0 ; i < names.length ; i++) {
+            // 5의 배수에 해당되는 값만 출력하는 조건문 작성
+            if ( (i+1) % 5 == 0) {
+                System.out.print(names[i] + " ");
+            }
+        }
 
     }
 }

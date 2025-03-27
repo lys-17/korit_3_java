@@ -10,7 +10,6 @@ public class BankAccessModifierMain {
 //        int pin = 0;
 //
 //
-//
 //        bank1.showInfo();
 //        bank1.deposit(1000, 3214);  // 입금하는데 비밀번호 틀리면
 //        System.out.println(bank1.getBalance()); // 입금되지 않았는지 확인

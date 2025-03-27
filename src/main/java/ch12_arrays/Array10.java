@@ -1,7 +1,5 @@
 package ch12_arrays;
 
-import java.util.Scanner;
-
 public class Array10 {
     public static void main(String[] args) {
         String[] persons = { "강수림", "기준성","김미진", "김준식", "문성진",
@@ -16,12 +14,12 @@ public class Array10 {
             15번 : 한영진 님
          */
 
-        Scanner scanner = new Scanner(System.in);
-
+        //for문
         for(int i = 0; i < persons.length; i++) {
             System.out.println((i + 1) + "번 : " + persons[i] + " 님");
         }
 
+        //향상된 for문
         System.out.println();
         int number = 1;
         for(String person : persons) {

@@ -1,14 +1,16 @@
 package ch12_arrays;
 /*
-    1. calcSum / calcAvg 메서드를 완성하고, main
+      1. calcSum / calcAvg 메서드를 완성하고, main 단계의 메서드 호출 부분을 수정해서
+    실행 예
+    총합 : 몇점
+    평균 : 몇점
  */
-
 
 public class Array06 {
 
     // 총합을 구하는 메서드
     private int calcSum(int[] scores) {
-        int sum = 0;
+        int sum = 0;    // 지역변수
         for(int i = 0; i < scores.length; i++) {
             sum += scores[i];
         }
@@ -26,7 +28,7 @@ public class Array06 {
 //        sum = calcSum(scores);
 
         avg = (double)calcSum(scores)/scores.length ;
-
+        System.out.println("총합 : " + sum);
         return avg;
     }
 
@@ -34,8 +36,6 @@ public class Array06 {
     // 등급 인원수를 구하는 메서드--->call3()
     private void countGrade(int[] scores) {
         int[] grades = {0, 0, 0, 0, 0};
-
-        scores = new int[]{0, 0, 0, 0, 0};
         for(int i = 0 ; i < scores.length ; i++) {
             if(scores[i] > 89) {
                 grades[0]++;
@@ -61,6 +61,7 @@ public class Array06 {
     public void printTotalInfo(int[] scores) {
         // 얘만 실행시키면 합계도 나오고 평균도 나오고, A-F 인원수도 다 나왔으면
         System.out.println("총합 : " + calcSum(scores));
+
  //       double avgScore = calcAvg(scores);
         /*
             왜 이따위로 작성했는지 변명 :
@@ -73,6 +74,7 @@ public class Array06 {
             이런 방법도 있다는 것을 보여드리기 위해서 기록만 남겨두고
             쓰지 맙시다.
          */
+
         System.out.println("평균 : " + calcAvg(scores));
         countGrade(scores);
     }
@@ -95,7 +97,5 @@ public class Array06 {
 //       array06.countGrade(scores);     // A 인원수 ~ F 인원수를 구하는 메서드 호출
 
         array06.printTotalInfo(scores);
-
-
     }
 }

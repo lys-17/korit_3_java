@@ -3,7 +3,8 @@ package ch11_access_modifier;
 class Person {
     private String name;
 
-    //private 이기 떄문에 이 Person 클래스 외부에서는 name 을 참 조 할 수 없음
+    //private 이기 떄문에 이 Person 클래스 외부에서는 name 을 참조 할 수 없음
+    // -> 우회방법이 뭐다? setter / getter다.
 
     public String getName() {
         return name;

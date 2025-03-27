@@ -8,6 +8,5 @@ public class Array07 {
 
        Array06 array06 = new Array06();
        array06.printTotalInfo(mathScores);
-
     }
 }

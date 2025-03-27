@@ -2,23 +2,26 @@ package ch12_arrays;
 /*
     향상된 for문(Enhanced For Loop)
 
-    일반 for문과의 차이점
+    일반 for문과의 차이점 :
         일반 for문의 경우 인덱스 넘버(주소지)를 명확하게 알고 있어야
-        하지만 일일이 element의 숫자를 세는 것이 번거롭기  때문에 arr01.length 와 같은
-        방식으로 int값을 추출해서 대입함
+        하지만 일일이 element의 숫자를 세는 것이 번거롭기 때문에
+        arr01.length와 같은 방식으로 int 값을 추출해서 대입했습니다.
 
-        그런데 잘 생각해 보면 for (int i = 0;)
+        그런데 잘 생각해보면 for (int i = 0 ; ...)할 때의 int i는
+        for문 내부에서 선언됩니다.
 
-
-
+        이를 응용하여 배열 내의 element를 변수에 대입해버리는 방식으로
+        index 넘버(주소지)의 사용 없이 적용할 수 있는 for 반복문이 있는데,
+        이를 향상된 for문이라고 합니다.
 
     제약 :
-       읽기만 되고, 쓰기가 안됨.
+        읽기만 되고, 쓰기가 안됩니다.(1부터 100까지 추출하는건 되는데, 1부터 100까지
+            입력은 불가능)
 
-    형식:
-       for (자료형 변수명(단수) : 반복가능객체(복수) (배열)) {
-            반복실행문
-       }
+    형식 :
+    for( 자료형 변수명 : 반복가능객체(배열) ) {
+        반복실행문
+    }
  */
 public class Array08EnhancedFor {
     public static void main(String[] args) {
@@ -33,6 +36,7 @@ public class Array08EnhancedFor {
         for(int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
         }
+        System.out.println();
 
         //향상된 for문으로 작성
         for(int number : numbers) {
@@ -49,5 +53,4 @@ public class Array08EnhancedFor {
             System.out.println(name + " ");
         }
     }
-
 }

@@ -14,8 +14,10 @@ public class Array03 {
         int specificNum = scanner.nextInt();
 
 
-        for(int i = 0; i < names.length; i++) {
-                System.out.println(names[i] + " ");
+        for (int i = 0 ; i < names.length ; i++) {
+            if ( (i+1) %  specificNum == 0 ) {
+                System.out.print(names[i] + " ");
+            }
         }
     }
 }

@@ -38,6 +38,7 @@ public class Array12 {
 //        // Math 클래스를 사용한 임의의 실수 대입
 //        double a = Math.random();       // 0.0초과 1.0미만의 난수 생성해서 반환
 //        System.out.println(a);
+
         //빈 배열 선언
         Integer[] numbers = new Integer[10];
         int sum = 0;

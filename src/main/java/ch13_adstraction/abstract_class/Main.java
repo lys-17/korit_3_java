@@ -1,5 +1,7 @@
 package ch13_adstraction.abstract_class;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Main {
     public static void main(String[] args) {
         // 추상 클래스는 객체 생성을 할 수 없음
@@ -36,3 +38,10 @@ public class Main {
         // 굳이 alt + ins를 통해서 override methods를 할 필요가 없습니다.
     }
 }
+
+//    TabletFactory  tabletFactory1 = new TabletFactory('구글테블릿');
+
+//    tabletFactory1.setName("구글 데블릿 공장");
+//
+//    }
+//}

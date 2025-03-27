@@ -55,6 +55,7 @@ import java.util.Scanner;
                 통과되는지 검증해보시기 바랍니다.
  */
 
+
 public class BankAccessModifier {
     private int accountNum;
     private String accountHolder;

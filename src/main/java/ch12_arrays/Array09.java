@@ -1,10 +1,9 @@
 package ch12_arrays;
 
         /*
-
-
+    String[] students 배열을 선언하고
             실행 예
-            몇 명의 학생을 등록하시겠습니까? >>>  15
+            몇 명의 학생을 등록하시겠습니까? >>> 15
             1 번 학생 이름 : 강수림
             2 번 학생 이름 : 기준성
             3 번 학생 이름 : 김미진
@@ -21,7 +20,17 @@ package ch12_arrays;
             14 번 학생 이름 : 채수원
             15 번 학생 이름 : 한영진
 
-            5의 배수에 해당하는 학생만 콘솔에 출력하시오.
+    일반 for문으로 출력(근데 이건 복사붙여넣기 하면 되죠)
+    향상된 for문으로 이름만 출력하겠습니다
+    실행 예
+    강수림
+    기준성
+    ...
+    한영진
+    강수림
+    기준성
+    ...
+    한영진
          */
 
 import java.util.Scanner;
@@ -29,26 +38,23 @@ import java.util.Scanner;
 public class Array09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.print("몇 명의 학생을 등록하시겠습니까? >>> ");
         int indexNum = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine();     // 배리어
         String[] students = new String[indexNum];
-        // 입력 part는 일반 for문
-        for(int i = 0; i < students.length; i++) {
-            System.out.println((i+1)+ "번 학생 등록 : ");
+        //입력 part는 일반 for문
+        for( int i = 0 ; i < students.length ; i++ ) {  // students.length == indexNum
+            System.out.print((i+1) + "번 학생 등록 : ");
             students[i] = scanner.nextLine();
         }
-
-        //출력 part는 일반 for문 한 번 향상된 for문 한 번 해서 두 번 출력됨
-        //일반 for문
-        for(int i = 0; i < students.length; i++){
+        //출력 part는 일반 for문 한 번 향상된 for문 한 번 해서 두 번 출력됩니다.
+        // 일반 for문
+        for( int i = 0 ; i < students.length ; i++ ) {
             System.out.println(students[i]);
         }
-
-        //향상된 for문
+        // 향상된 for문
         for(String student : students) {
             System.out.println(student);
         }
-
-
     }
 }

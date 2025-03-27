@@ -20,7 +20,6 @@ public class Array04 {
     }
 
 
-
     public static void main(String[] args) {
         //입력값 받기 위한 Scanner  import
         Scanner scanner = new Scanner(System.in);

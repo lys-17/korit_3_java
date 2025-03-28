@@ -4,14 +4,6 @@ public class EBook extends Book {
     private double fileSize;
     private String format;
 
-    public EBook() {
-        super();
-    }
-
-    public EBook(double fileSize, String format) {
-        this.fileSize = fileSize;
-        this.format = format;
-    }
 
     public EBook(String title, String author, double fileSize, String format) {
         super(title, author);

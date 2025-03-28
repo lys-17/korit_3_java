@@ -1,12 +1,13 @@
 package ch12_inheritance;
 
 public class Tiger extends Animal { //(자식)클래스명 extends (부모) 클래스
+    // 필드 안 쓸거임
 
     public Tiger() {
     }
 
     public Tiger(String animalName) {
-        super(animalName);
+        super(animalName);           // 얘가 아까 필기한 super() 키워드임
     }
 
     public Tiger(int animalAge) {
@@ -17,7 +18,7 @@ public class Tiger extends Animal { //(자식)클래스명 extends (부모) 클�
         super(animalName, animalAge);
     }
 
-    @Override           //얘가 붙어있다면 해당 메서드
+    @Override           //얘가 붙어있다면 해당 메서드는 상속 받은 것
     public String getAnimalName() {
         return super.getAnimalName();       //키워드 super.메서드명()
     }
@@ -40,7 +41,7 @@ public class Tiger extends Animal { //(자식)클래스명 extends (부모) 클�
     @Override
     public void move() {
         super.move();
-        System.out.println("네 발로 움직임");
+        System.out.println("네 발로 움직임"); //여기가 재정의파트
     }
 
     //Tiger 클래스 만의 고유 매서드
@@ -48,5 +49,4 @@ public class Tiger extends Animal { //(자식)클래스명 extends (부모) 클�
         super.move();
         System.out.println("네 발로 움직임");
     }
-
 }

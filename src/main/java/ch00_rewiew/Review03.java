@@ -54,14 +54,14 @@ public class Review03 {
 
         // 조건문
         if(age >= 7) {
-            System.out.println("규정 나이 7세 이상입니다");
+            System.out.println("규정 나이 7세 이상입니다");   // 실행문1-1
             if(height >= 110) {
-                System.out.println("롤러코스터 입장이 가능합니다");
-            } else {
-                System.out.println("하지만 키가 작아서 안됨");
+                System.out.println("롤러코스터 입장이 가능합니다");   // 실행문 1-a
+            } else {         // height < 110
+                System.out.println("하지만 키가 작아서 안됨");     // 실행문 1-b
             }
             System.out.println("감사합니다");
-        } else {
+        } else {        // age > 7
             System.out.println("규정 나이 미만으로 탑승 불가");
         }
 
@@ -87,7 +87,8 @@ public class Review03 {
             System.out.println("당신은 롤러코스터에 탈 수 있음");
         } else {        // 앞의 두 변수 중 하나라도 충족시키지 못하면 false임
                         // 키가 잘못됐는지 나이가 잘못됐는지는 이런 방식으로는 알수 없음
-            System.out.println("키가 작거나 나이가 어려서 못탐 ㅅㄱ");
+            System.out.println("그 이유는 모르겠는데 나이가 어리거나 키가 작거나인가봅니다.");
+            System.out.println("롤러코스터 못탑니다.");
         }
 
 

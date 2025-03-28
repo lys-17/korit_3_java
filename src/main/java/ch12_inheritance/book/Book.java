@@ -38,9 +38,6 @@ public class Book {
     private String title;
     private String author;
 
-    public Book() {
-    }
-
     public Book(String title, String author) {
         this.title = title;
         this.author = author;
@@ -60,30 +57,5 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
-    }
-
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
-
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
     }
 }

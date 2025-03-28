@@ -27,12 +27,9 @@ package ch12_inheritance;
     여러분이름은 자바의 기초를 읽는 중입니다.
  */
 public class  Human extends Animal {
-    // 상속 받게 되면 Animal 클래스의 필드를 그대로 사용 가능함
-    //--------------
-    //----------
-
-
-
+    // 상속 받게 되면 Animal 클래스의 필드를 그대로 사용 가능합니다.
+    // 고유 메서드처럼 고유 속성도 가질 수 있습니다.
+    String smartPhone;
 
 
     public Human() {
@@ -47,8 +44,9 @@ public class  Human extends Animal {
         super(animalAge);
     }
 
-    public Human(String animalName, int animalAge) {
-        super(animalName, animalAge);
+    public Human(String animalName, int animalAge, String smartPhone) {
+        super(animalName, animalAge);   // 부모 필드를 그대로 대입하는 것.
+        this.smartPhone = smartPhone;
     }
 
     @Override
@@ -73,17 +71,21 @@ public class  Human extends Animal {
 
     @Override
     public void move() {
-        super.move();
+//        super.move();
         System.out.println("사람이 두 발로 걷습니다.");
     }
 
+    // call2() 유형으로 read 메서드 정의
     public void read(String book) {
-        System.out.println( getAnimalAge() + "은 자바의 기초를 읽는 중입니다.");
-
+        System.out.println(getAnimalAge() + "은 " + book + "을 읽고 있는 중입니다.");
     }
 
-    // 새로 만든 필드만 smartPhone에 관한 getter / setter는 추가적으로 작성해야할 필요가 있음
+    // 새로 만든 필드인 smartPhone에 관한 getter / setter는 추가적으로 작성해야할 필요가 있음
+    public String getSmartPhone() {
+        return smartPhone;
+    }
 
-
-
+    public void setSmartPhone(String smartPhone) {
+        this.smartPhone = smartPhone;
+    }
 }

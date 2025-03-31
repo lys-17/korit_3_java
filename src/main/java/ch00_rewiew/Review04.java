@@ -19,18 +19,20 @@ public class Review04 {
                 반복실행문3
              }
          */
-        int limitNumber = 100;
+//        int limitNumber = 100;
 
-        for(int i = 0; i < limitNumber; i++) {
+//        for(int i = 0; i < limitNumber; i++) {
 //            System.out.print(i + " ");
             // 여기 내부에 if문을 써서 1부터 limitNumber까지의 숫자 중
             // 짝수만 뽑아낼 수 있도록 하는 조건문을 작성
-
-            int addedI = i+1;
-            if(addedI % 2 == 0) {
-                System.out.print(addedI + " ");
-            }
-        }
+//            int addedI = i+1;
+//            if( addedI % 2 == 0 ) {
+//                System.out.print(addedI + " ");
+//            }
+//        }
+//        for (int i = 2 ; i < limitNumber+1 ; i+=2) {
+//            System.out.print(i + " ");
+//        }
 
         /*
             실행 예
@@ -54,7 +56,8 @@ public class Review04 {
 //            n++;
 //        }
         /*
-            여태까지 제가 코드를 작성하는 방식을 봤을 떄 사용하는 클래스들을 import -> 엔터 두번 친 다음 변수 목록
+            여태까지 제가 코드를 작성하는 방식을 봤을 때
+            사용하는 클래스들을 import -> 엔터 두번 친 다음 변수 목록
          */
         // 사용할 클래스 목록(객체 생성)
         Scanner scanner = new Scanner(System.in);

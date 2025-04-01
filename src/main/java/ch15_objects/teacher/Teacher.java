@@ -7,17 +7,12 @@ public class Teacher {
     private String schoolName;
 
     //AllArgsConstructor 정의
-
-    // getter / setter
-
-
-    public Teacher() {}
-
     public Teacher(String name, String schoolName) {
         this.name = name;
         this.schoolName = schoolName;
     }
 
+    // getter / setter 정의하세요
     public String getName() {
         return name;
     }

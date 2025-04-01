@@ -112,8 +112,11 @@ public class CentralControl {
             } else if (device instanceof Computer) {
                 Computer computer = (Computer) device;
                 computer.compute();
-            }else if (device == null) {
-
+            }else if (device == null) { // 장치가 비어있는 부분일 때 실행되는 부분
+                System.out.println("장치가 비어있습니다");
+            }
+            else {                                    // 아직 instanceof 연산자로 추가하지 못한 class
+                System.out.println("아직 지원하지 않는 기기입니다.");
             }
         }
     }

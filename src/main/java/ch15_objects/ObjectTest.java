@@ -7,12 +7,6 @@ public class ObjectTest {
 
 
     // 기본 생성자, 매개 변수 생성자(AllArguConstructor)를 생성
-
-    // getter / setter 생성
-
-    // displayInfo()를 call1() 형식으로 정의
-
-
     public ObjectTest() {}
 
     public ObjectTest(String name, String address) {
@@ -20,6 +14,8 @@ public class ObjectTest {
         this.address = address;
     }
 
+
+    // getter / setter 생성
     public String getName() {
         return name;
     }
@@ -36,6 +32,10 @@ public class ObjectTest {
         this.address = address;
     }
 
+    // displayInfo()를 call1형식으로 정의하시오.
+    // 실행 예
+    // 이름 : 안근수
+    // 주소 : 부산광역시 연제구
     public void displayInfo1() {
         System.out.println("이름 : " + name);
         System.out.println("주소 : " + address);
